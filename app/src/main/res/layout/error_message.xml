@@ -1,0 +1,54 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/curve_shap"
+    android:orientation="vertical"
+    android:layout_gravity="center_horizontal"
+    style="@style/alertDialogStyle1"  >
+
+    <!--  IOS people asked to remove status	 -->
+
+    <!--<TextView
+        android:id="@+id/errorMessageTitle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/errormessage.errorMessageTitle.layout.height"
+        android:gravity="center"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceLarge" />-->
+
+
+    <ImageView
+        android:id="@+id/errorImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/underconstruction"  />
+
+   <!-- <TextView
+        android:id="@+id/errorMessage"
+        android:layout_width="@dimen/errormessage.errorMessage.layout.width"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/errormessage.errorMessage.margin"
+
+        android:gravity="center"
+        android:textSize="@dimen/errormessage.errorMessage.text.size"
+        />-->
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/errormessage.line.layout.height"
+        android:background="#C7C7C7"
+        android:paddingBottom="@dimen/errormessage.line.padding.bottom" />
+
+    <Button
+        android:id="@+id/btn_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/errormessage.btnok.margin.top"
+        android:gravity="center"
+        android:textColor="#792500"
+        android:textSize="@dimen/errormessage.btnok.text.size"
+        android:background="#FFFFFF" />
+
+
+</LinearLayout>

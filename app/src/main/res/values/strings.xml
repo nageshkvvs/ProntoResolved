@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">ProntoResolved</string>
+
+    <string name="label_underConstruction">Under Construction!</string>
+    <string name="label_underConstruction_MessageBlank"></string>
+</resources>

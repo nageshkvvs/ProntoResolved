@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.testdemo.com.prontoresolved">
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/app_logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+
+        </activity>
+        <activity android:name="com.prontoresolved.activity.LaunchScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.prontoresolved.activity.MainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize">
+
+        </activity>
+        <activity
+            android:name="com.prontoresolved.activity.HomeActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"></activity>
+        <activity
+            android:name="com.prontoresolved.activity.RequestActivtiy"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"> ></activity>
+
+        <activity
+            android:name="com.prontoresolved.activity.ReportActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"> ></activity>
+    </application>
+
+</manifest>

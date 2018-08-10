@@ -1,0 +1,317 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- main activity screen -->
+    <dimen name="main_activity_ll_hotel_margin_top">70dp</dimen>
+    <dimen name="main_activity_guest_ll__width">250dp</dimen>
+    <dimen name="main_activity_guest_ll_paddingTop">1dp</dimen>
+    <dimen name="main_activity_guest_ll_paddingButtom">1dp</dimen>
+
+    //guest_btn
+    <dimen name="main_activity_guest_btn__width">40dp</dimen>
+    <dimen name="main_activity_guest_btn_marginLeft">10dp</dimen>
+
+    //guest_textview
+    <dimen name="main_activity_guest_tv_marginLeft">10dp</dimen>
+
+    //hdrTop
+    <dimen name="main_activity_hdrTop_layout_height">2dp</dimen>
+    <dimen name="main_activity_hdrTop_layout_marginTop">2dp</dimen>
+
+    //team_memebr_ll
+    <dimen name="main_activity_team_member_ll_width">250dp</dimen>
+    <dimen name="main_activity_team_member_ll_paddingTop">1dp</dimen>
+    <dimen name="main_activity_team_member_ll_paddingBottom">1dp</dimen>
+
+    //team_member_btn
+    <dimen name="main_activity_team_member_btn_marginLeft">10dp</dimen>
+    <dimen name="main_activity_team_member_btn_width">40dp</dimen>
+
+    //team_member_textview
+    <dimen name="main_activity_team_member_tv_marginLeft">12dp</dimen>
+
+    //ll_guestinfo
+    <dimen name="main_activity_ll_guestinfo_width">250dp</dimen>
+    <dimen name="main_activity_ll_guestinfo_padding">15dp</dimen>
+
+    //guestname
+    <dimen name="main_activity_guestname_et_height">30dp</dimen>
+    <dimen name="main_activity_guestname_et_padding">5dp</dimen>
+    <dimen name="main_activity_guestname_et_marginTop">10dp</dimen>
+    <dimen name="main_activity_guestname_et_textSize">12sp</dimen>
+
+    //hotel_name
+
+    <!--<dimen name="main_activity_hotel_name_et_height">40dp</dimen>
+    <dimen name="main_activity_hotel_name_et_padding">5dp</dimen>
+    <dimen name="main_activity_hotel_name_et_marginTop">10dp</dimen>
+    <dimen name="main_activity_hotel_name_et_textSize">12sp</dimen>-->
+
+    //btn_guestinfo_submit
+    <dimen name="main_activity_btn_guestinfo_submit_marginTop">10dp</dimen>
+    <dimen name="main_activity_btn_guestinfo_submit_height">35dp</dimen>
+
+
+    <dimen name="guestinfo_close_imageview_width">15dp</dimen>
+    <dimen name="guestinfo_close_imageview_height">15dp</dimen>
+
+    <!--home footer screen -->
+
+    //home_footer_ll
+    <dimen name="home_footer_ll_height">70dp</dimen>
+    <!-- request -->
+    //request_ll
+    <dimen name="request_ll_marginLeft">7dp</dimen>
+    <dimen name="request_ll_marginRight">7dp</dimen>
+    <dimen name="request_ll_marginTop">12dp</dimen>
+
+    //request_btn
+    <dimen name="request_btn_width">30dp</dimen>
+    <dimen name="request_btn_height">30dp</dimen>
+
+    //request_tv
+    <dimen name="request_tv_marginTop">3dp</dimen>
+
+    <!-- report-->
+    //report_ll
+    <dimen name="report_ll_marginLeft">7dp</dimen>
+    <dimen name="report_ll_marginRight">7dp</dimen>
+    <dimen name="report_ll_marginTop">12dp</dimen>
+
+    //report_btn
+    <dimen name="report_btn_width">40dp</dimen>
+    <dimen name="report_btn_height">30dp</dimen>
+
+    //request_tv
+    <dimen name="report_tv_marginTop">3dp</dimen>
+
+
+    <!-- hotel_logo-->
+    //hotel_logo_ll
+    <dimen name="hotel_logo_ll_margin">0dp</dimen>
+    //hotel_logo_btn
+    <dimen name="hotel_logo_btn_width">70dp</dimen>
+    <dimen name="hotel_logo_btn_height">70dp</dimen>
+
+    <!-- contact-->
+    //contact_ll
+    <dimen name="contact_ll_marginLeft">7dp</dimen>
+    <dimen name="contact_ll_marginRight">7dp</dimen>
+    <dimen name="contact_ll_marginTop">12dp</dimen>
+    //contact_btn
+    <dimen name="contact_btn_marginLeft">10dp</dimen>
+    <dimen name="contact_btn_width">30dp</dimen>
+    <dimen name="contact_btn_height">30dp</dimen>
+    //contact_tv
+    <dimen name="contact_tv_marginTop">3dp</dimen>
+
+    <!-- more-->
+    //more_ll
+    <dimen name="more_ll_marginLeft">7dp</dimen>
+    <dimen name="more_ll_marginRight">7dp</dimen>
+    <dimen name="more_ll_marginTop">12dp</dimen>
+    //more_btn
+    <dimen name="more_btn_width">30dp</dimen>
+    <dimen name="more_btn_height">30dp</dimen>
+    //more_tv
+    <dimen name="more_tv_marginTop">3dp</dimen>
+
+    <!-- Home Activity -->
+    <dimen name="home_tv_title_marginTop">10dp</dimen>
+    <dimen name="home_ll_margin">8dp</dimen>
+    <dimen name="home_ll_padding">10dp</dimen>
+    <dimen name="home_header_tv_marginTop">5dp</dimen>
+
+    <dimen name="home_imageview_height">200dp</dimen>
+    <dimen name="home_imageview_marginTop">10dp</dimen>
+
+    <dimen name="home_notification_listview_marginTop">10dp</dimen>
+    <dimen name="home_notification_listview_height">140dp</dimen>
+
+    <!-- notification activity -->
+
+    <dimen name="notification_rl_marginTop">5dp</dimen>
+    <dimen name="notification_rl_marginLeft">10dp</dimen>
+    <dimen name="notification_rl_height">20dp</dimen>
+    <dimen name="notification_title_tv_marginTop">0dp</dimen>
+
+    <dimen name="notification_title_tv_textSize">12sp</dimen>
+    <dimen name="notification_title_tv_marginRight">10dp</dimen>
+
+    <dimen name="notification_close_imageview_width">15dp</dimen>
+    <dimen name="notification_close_imageview_height">15dp</dimen>
+    <dimen name="notification_close_imageview_marginLeft">255dp</dimen>
+
+    <dimen name="notification_msg_marginTop">5dp</dimen>
+    <dimen name="notification_msg_marginLeft">10dp</dimen>
+    <dimen name="notification_msg_textSize">10sp</dimen>
+
+    <dimen name="status_ll_margin_left">10dp</dimen>
+
+    //added  height for linear layout date:12/03/18
+    <dimen name="notification_parent_ll_height">110dp</dimen>
+
+    <!-- request activity screen -->
+
+    <dimen name="request_tv_header_title_tv_marginTop">10dp</dimen>
+    <dimen name="request_ll_margin">10dp</dimen>
+    <dimen name="request_ll_padding">10dp</dimen>
+
+    <dimen name="request_header_tv_marginTop">5dp</dimen>
+
+    <dimen name="request_imageview_height">180dp</dimen>
+    <dimen name="request_imageview_marginTop">10dp</dimen>
+
+    <dimen name="request_scrollview_marginTop">10dp</dimen>
+    <dimen name="request_scrollview_marginRight">5dp</dimen>
+    <dimen name="request_scrollview_marginLeft">5dp</dimen>
+    <dimen name="request_scrollview_marginButtom">70dp</dimen>
+
+    <dimen name="request_ll_req_form_margin">0dp</dimen>
+
+    <dimen name="request_service_req_tv_marginTop">10dp</dimen>
+
+
+    <dimen name="request_service_req_et_marginTop">5dp</dimen>
+    <dimen name="request_service_req_et_width">268dp</dimen>
+    <dimen name="request_service_req_et_height">90dp</dimen>
+    <dimen name="request_service_req_et_marginRight">5dp</dimen>
+    <dimen name="request_service_req_et_marginLeft">5dp</dimen>
+
+    <dimen name="request_restaurent_name_tv_height">40dp</dimen>
+    <dimen name="request_restaurent_name_tv_padding">5dp</dimen>
+    <dimen name="request_restaurent_name_tv_textSize">12sp</dimen>
+    <dimen name="request_restaurent_name_tv_marginTop">10dp</dimen>
+
+    <dimen name="request_hotel_tv_marginTop">10dp</dimen>
+
+    <dimen name="request_hotel_spinner_marginTop">5dp</dimen>
+    <dimen name="request_hotel_spinner_height">35dp</dimen>
+
+    <dimen name="request_select_date_height">35dp</dimen>
+    <dimen name="request_select_date_padding">5dp</dimen>
+    <dimen name="request_select_date_textSize">12sp</dimen>
+    <dimen name="request_select_date_marginTop">10dp</dimen>
+
+
+    <dimen name="request_numOfPersons_height">35dp</dimen>
+    <dimen name="request_numOfPersons_padding">5dp</dimen>
+    <dimen name="request_numOfPersons_textSize">12sp</dimen>
+    <dimen name="request_numOfPersons_marginTop">10dp</dimen>
+
+    <dimen name="request_guestinfo_submit_btn_marginTop">10dp</dimen>
+    <dimen name="request_guestinfo_submit_btn_height">35dp</dimen>
+
+    <!-- footer -->
+    <dimen name="footer_ll_pronto_logo_height">60dp</dimen>
+
+    <!-- under construction -->
+
+    <dimen name="errormessage.errorMessageTitle.layout.height">56dp</dimen>
+    <dimen name="errormessage.errorMessage.layout.height">103dp</dimen>
+    <dimen name="errormessage.errorMessage.layout.width">293dp</dimen>
+    <dimen name="errormessage.errorMessage.margin">12dp</dimen>
+    <dimen name="errormessage.errorMessage.text.size">20sp</dimen>
+    <dimen name="errormessage.line.layout.height">1dp</dimen>
+    <dimen name="errormessage.line.padding.bottom">20dp</dimen>
+    <dimen name="errormessage.btnok.text.size">25sp</dimen>
+    <dimen name="errormessage.btnok.margin.top">5dp</dimen>
+
+    //
+    <dimen name="validation_dialog_width_width_margin">40dp</dimen>
+
+    <!-- report -->
+    <dimen name="report_tv_header_title_tv_marginTop">10dp</dimen>
+    <dimen name="report_ll_margin">10dp</dimen>
+    <dimen name="report_ll_padding">10dp</dimen>
+
+    <dimen name="report_header_tv_marginTop">5dp</dimen>
+
+    <dimen name="report_imageview_height">180dp</dimen>
+    <dimen name="report_imageview_marginTop">10dp</dimen>
+
+    <dimen name="report_scrollview_marginTop">10dp</dimen>
+    <dimen name="report_scrollview_marginRight">5dp</dimen>
+    <dimen name="report_scrollview_marginLeft">5dp</dimen>
+    <dimen name="report_scrollview_marginButtom">70dp</dimen>
+
+    <dimen name="report_ll_req_form_margin">0dp</dimen>
+
+    <dimen name="report_service_req_tv_marginTop">10dp</dimen>
+
+
+    <dimen name="report_service_req_et_marginTop">5dp</dimen>
+    <dimen name="report_service_req_et_width">268dp</dimen>
+    <dimen name="report_service_req_et_height">90dp</dimen>
+    <dimen name="report_service_req_et_marginRight">5dp</dimen>
+    <dimen name="report_service_req_et_marginLeft">5dp</dimen>
+
+   <!-- <dimen name="report_restaurent_name_tv_height">40dp</dimen>
+    <dimen name="report_restaurent_name_tv_padding">5dp</dimen>
+    <dimen name="report_restaurent_name_tv_textSize">12sp</dimen>
+    <dimen name="report_restaurent_name_tv_marginTop">10dp</dimen>
+
+    <dimen name="report_hotel_tv_marginTop">10dp</dimen>
+
+    <dimen name="report_hotel_spinner_marginTop">5dp</dimen>
+    <dimen name="report_hotel_spinner_height">35dp</dimen>
+-->
+    <dimen name="report_select_date_height">35dp</dimen>
+    <dimen name="report_select_date_padding">5dp</dimen>
+    <dimen name="report_select_date_textSize">12sp</dimen>
+    <dimen name="report_select_date_marginTop">10dp</dimen>
+
+<!--
+    <dimen name="report_numOfPersons_height">35dp</dimen>
+    <dimen name="report_numOfPersons_padding">5dp</dimen>
+    <dimen name="report_numOfPersons_textSize">12sp</dimen>
+    <dimen name="report_numOfPersons_marginTop">10dp</dimen>-->
+
+    <dimen name="report_guestinfo_submit_btn_marginTop">10dp</dimen>
+    <dimen name="report_guestinfo_submit_btn_height">35dp</dimen>
+
+
+
+    //validate popup
+
+    <dimen name="validate_popup_btn_layout_width">80dp</dimen>
+    <dimen name="validate_popup_btn_layout_height">35dp</dimen>
+    <dimen name="validate_popup_ok_prompt_content_marginLeft">2dp</dimen>
+    <dimen name="validate_popup_ok_prompt_content_marginRight">2dp</dimen>
+    <dimen name="validate_popup_ok_prompt_content_marginTop">10dp</dimen>
+    <dimen name="validate_popup_ok_prompt_content_padding">4dp</dimen>
+    <dimen name="validate_popup_ok_prompt_content_padding_textSize">20dp</dimen>
+
+    <dimen name="validate_popup_image_frame_layout_marginTop">10dp</dimen>
+
+    <dimen name="validate_popup_iv_ok_prompt_action_width">30dp</dimen>
+    <dimen name="validate_popup_iv_ok_prompt_action_height">30dp</dimen>
+
+
+    <dimen name="validate_popup_horizontal_height">1dp</dimen>
+    <dimen name="validate_popup_horizontal_marginLeft">5dp</dimen>
+    <dimen name="validate_popup_horizontal_marginRight">5dp</dimen>
+    <dimen name="validate_popup_horizontal_marginTop">5dp</dimen>
+
+    //ok_prompt_title
+    <dimen name="validate_popup_ok_prompt_titlel_marginLeft">2dp</dimen>
+    <dimen name="validate_popup_ok_prompt_title_marginRight">2dp</dimen>
+    <dimen name="validate_popup_ok_prompt_title_marginTop">8dp</dimen>
+    <dimen name="validate_popup_ok_prompt_title_padding">4dp</dimen>
+    <dimen name="validate_popup_ok_prompt_title_textSiz">15sp</dimen>
+
+    //my_account_popup_rounded_corner.xml
+    <dimen name="popup_rounded_corner_radius">12dp</dimen>
+    <dimen name="popup_rounded_corner_width">2dp</dimen>
+    //LinearLayout
+    <dimen name="validate_popup_btn_ll_marginTop">5dp</dimen>
+    <dimen name="validate_popup_btn_ll_marginBottom">10dp</dimen>
+    <dimen name="validate_popup_ok_prompt_btn_ok_textSize">12dp</dimen>
+    //validate_button.xml
+    <dimen name="validate_button_padding">10dp</dimen>
+    <dimen name="validate_button_radius">5dp</dimen>
+
+
+</resources>

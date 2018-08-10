@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_backgd_image"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBlack"
+    tools:context="com.testdemo.com.prontoresolved.MainActivity">
+    <TextView android:id="@+id/tv_header"
+        android:layout_width="wrap_content" android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/home_tv_title_marginTop"
+        android:layout_height="wrap_content" android:text="Guest Home" android:textColor="@color/colorWhite"/>
+
+    <LinearLayout
+        android:id="@+id/home_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/home_ll_margin"
+        android:background="#FBF7EA"
+        android:layout_below="@+id/tv_header"
+        android:orientation="vertical" android:padding="@dimen/home_ll_padding">
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" android:orientation="horizontal">
+        <TextView
+            android:id="@+id/home_header_tv"
+            android:layout_marginTop="@dimen/home_header_tv_marginTop"
+            android:layout_width="wrap_content" android:textColor="#4F716C"
+            android:layout_height="wrap_content" android:text="Welcome"/>
+    <TextView
+        android:id="@+id/home_firstName"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="@dimen/home_header_tv_marginTop"
+        android:layout_width="wrap_content" android:textColor="#4F716C"
+        android:layout_height="wrap_content" android:text="Welcome"/>
+    <TextView
+        android:id="@+id/home_lastName"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="@dimen/home_header_tv_marginTop"
+        android:layout_width="wrap_content" android:textColor="#4F716C"
+        android:layout_height="wrap_content" android:text="Welcome"/>
+</LinearLayout>
+
+        <ImageView
+            android:id="@+id/home_imageview"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/home_imageview_height"
+            android:layout_marginTop="@dimen/home_imageview_marginTop"
+            android:src="@drawable/front_office" />
+        <ListView
+
+            android:layout_marginTop="@dimen/home_notification_listview_marginTop"
+            android:id="@+id/notification_listview"
+            android:layout_width="wrap_content"
+            android:dividerHeight="0dp"
+            android:layout_height="@dimen/home_notification_listview_height"
+            >
+
+        </ListView>
+       <!-- <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_gravity="center_horizontal">
+            <TextView
+                android:id="@+id/textview"
+                android:layout_width="300dp"
+                android:layout_height="75dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="20dp"
+                android:textStyle="italic"
+                android:textSize="10sp"
+                android:padding="5dp"
+                android:textColor="#969696"
+                android:text="Notification\nThe Price Alerts is a very helpful, money saving feature that always helps me find the best hotel deals.\nStatus:closed"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/textbox"/>
+
+            <ImageView
+                android:layout_marginTop="25dp"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="25dp"
+                android:src="@drawable/actions_window_close_icon" />
+
+
+        </RelativeLayout>
+-->
+        <!--<RelativeLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_gravity="center_horizontal">
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="75dp"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                android:textStyle="italic"
+                android:padding="5dp"
+                android:textSize="10sp"
+                android:textColor="#969696"
+                android:text="Notification\nI saved a lot of money with Price Alerts, and the price I found even included breakfast. It was fantastic, thanks HotelsCombined!\nStatus:open"
+                android:background="@drawable/textbox"/>
+
+            <ImageView
+                android:layout_marginTop="25dp"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="25dp"
+                android:src="@drawable/actions_window_close_icon" />
+
+
+        </RelativeLayout>-->
+
+        <!--<RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="280dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/actions_window_close_icon"
+                android:forceHasOverlappingRendering="true"/>
+
+            <TextView
+
+                android:layout_width="330dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="0dp"
+                android:background="#ffffff" />
+        </RelativeLayout>-->
+
+       <!-- <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/close_icon_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="280dp"
+                android:src="@drawable/actions_window_close_icon" />
+
+            <TextView
+                android:id="@+id/message_id"
+                android:layout_width="330dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/close_icon_id"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="0dp"
+                android:background="#ffffff" />
+        </RelativeLayout>-->
+    </LinearLayout>
+
+    <include layout="@layout/home_footer" />
+</RelativeLayout>

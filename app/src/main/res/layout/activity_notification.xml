@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="@dimen/notification_parent_ll_height" android:background="@drawable/notification_textbox"
+    android:id="@+id/notification_parent_ll">
+
+
+    <RelativeLayout
+        android:id="@+id/notification_rl"
+        android:layout_marginTop="@dimen/notification_rl_marginTop"
+        android:layout_marginLeft="@dimen/notification_rl_marginLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/notification_rl_height">
+        <TextView
+
+            android:id="@+id/notification_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/notification_title_tv_marginTop"
+            android:textStyle="bold"
+            android:textSize="@dimen/notification_title_tv_textSize"
+            android:layout_marginRight="@dimen/notification_title_tv_marginRight"
+            android:text="Notification"
+
+            />
+
+        <ImageView
+            android:id="@+id/notification_close_imageview"
+            android:layout_width="@dimen/notification_close_imageview_width"
+            android:layout_height="@dimen/notification_close_imageview_height"
+            android:layout_marginLeft="@dimen/notification_close_imageview_marginLeft"
+            android:src="@drawable/actions_window_close_icon" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/notification_msg"
+        android:layout_marginTop="@dimen/notification_msg_marginTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/notification_msg_marginLeft"
+        android:textColor="#969696"
+        android:text="The Price Alerts is a very helpful, money saving feature that always The Price Alerts is a very helpful, money saving feature that always  helps me find the best hotel deals."
+        android:textSize="@dimen/notification_msg_textSize"
+        android:textStyle="italic"
+        android:ellipsize="end"
+        android:maxLines="3"
+        />
+    <!--<RelativeLayout
+        android:id="@+id/notification_msg_rl"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp">
+        <TextView
+            android:id="@+id/notification_msg"
+            android:layout_width="320dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="0dp"
+            android:textStyle="italic"
+            android:textSize="10sp"
+            android:textColor="#969696"
+            android:text="The Price Alerts is a very helpful, money saving feature that always helps me find the best hotel deals."
+           />
+
+        <ImageView
+            android:id="@+id/closed_image"
+            android:layout_marginTop="0dp"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="25dp"
+            android:src="@drawable/actions_window_close_icon" />
+
+
+    </RelativeLayout>-->
+    <LinearLayout
+        android:id="@+id/status_ll"
+        android:layout_marginLeft="@dimen/status_ll_margin_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/status_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Status :"/>
+        <TextView
+            android:id="@+id/status_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Open"/>
+
+    </LinearLayout>
+</LinearLayout>

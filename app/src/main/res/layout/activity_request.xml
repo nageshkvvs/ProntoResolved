@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_backgd_image"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBlack"
+    android:orientation="vertical"
+    tools:context="com.testdemo.com.prontoresolved.MainActivity">
+    <TextView android:id="@+id/tv_header"
+        android:layout_width="wrap_content" android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/request_tv_header_title_tv_marginTop"
+        android:layout_height="wrap_content" android:text="ProntoResolved" android:textColor="@color/colorWhite"/>
+
+    <LinearLayout
+        android:id="@+id/request_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/request_ll_margin"
+        android:background="#FBF7EA"
+        android:layout_below="@+id/tv_header"
+        android:orientation="vertical" android:padding="@dimen/request_ll_padding">
+
+        <TextView
+            android:id="@+id/request_header_tv"
+            android:layout_marginTop="@dimen/request_header_tv_marginTop"
+            android:layout_width="wrap_content" android:textColor="#4F716C"
+            android:layout_height="wrap_content" android:text="Restaurant Reservation"/>
+
+        <ImageView
+            android:id="@+id/request_imageview"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/request_imageview_height"
+            android:layout_marginTop="@dimen/request_imageview_marginTop"
+            android:src="@drawable/reserve" />
+
+        <ScrollView
+            android:id="@+id/request_scrollview"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:scrollbars = "vertical"
+            android:layout_marginTop="@dimen/request_scrollview_marginTop"
+            android:layout_marginRight="@dimen/request_scrollview_marginRight"
+            android:layout_marginLeft="@dimen/request_scrollview_marginLeft"
+            android:layout_marginBottom="@dimen/request_scrollview_marginButtom">
+            <LinearLayout
+                android:id="@+id/request_ll_req_form"
+                android:layout_width="fill_parent"
+                android:layout_margin="@dimen/request_ll_req_form_margin"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+               <!-- <TextView
+                    android:id="@+id/request_service_req_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Reservation Comments:"
+                    android:textColor="@color/colorgrey"
+                    android:layout_marginTop="@dimen/request_service_req_tv_marginTop"
+                    />
+                <EditText
+                    android:id="@+id/request_service_req_et"
+                    android:layout_marginTop="@dimen/request_service_req_et_marginTop"
+                    android:layout_width="@dimen/request_service_req_et_width"
+                    android:layout_height="@dimen/request_service_req_et_height"
+                    android:paddingRight="@dimen/request_service_req_et_marginRight"
+                    android:paddingLeft="@dimen/request_service_req_et_marginLeft"
+                    android:hint=""
+                    android:scrollbars="vertical" android:gravity="top|left"  android:inputType="textMultiLine"  android:maxLength="500"
+                    android:background="@drawable/edittext_bg"
+                    android:textCursorDrawable="@drawable/cursor_color"/>-->
+                <!-- <TextView
+                     android:id="@+id/request_restaurent_name_tv"
+                     android:layout_width="match_parent"
+                     android:layout_height="@dimen/request_restaurent_name_tv_height"
+                     android:inputType="text"
+                     android:padding="@dimen/request_restaurent_name_tv_padding"
+                     android:hint="Restaurant Name"
+                     android:textSize="@dimen/request_restaurent_name_tv_textSize"
+                     android:layout_marginTop="@dimen/request_restaurent_name_tv_marginTop"
+                     android:gravity="center_vertical"
+                     android:textColorHint="@color/colorgrey"
+                     android:background="@drawable/edittext_bg" />-->
+                <TextView
+                    android:id="@+id/request_hotel_tv"
+                    android:layout_marginTop="@dimen/request_hotel_tv_marginTop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Select Restaurant:"
+                    android:textColor="@color/colorgrey"/>
+                <Spinner
+                    android:id="@+id/request_hotel_spinner"
+                    android:layout_marginTop="@dimen/request_hotel_spinner_marginTop"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/request_hotel_spinner_height"
+                    android:background="@drawable/dropdown_bg"></Spinner>
+
+                <TextView
+                    android:id="@+id/request_select_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/request_select_date_height"
+                    android:inputType="text"
+                    android:padding="@dimen/request_select_date_padding"
+                    android:hint="Reservation Date"
+                    android:textSize="@dimen/request_select_date_textSize"
+                    android:layout_marginTop="@dimen/request_select_date_marginTop"
+                    android:gravity="center_vertical"
+                    android:drawableRight="@drawable/calendar"
+                    android:textColorHint="@color/colorgrey"
+                    android:background="@drawable/edittext_bg"
+                    android:onClick="showDatePicker"/>
+                <EditText
+                    android:id="@+id/request_numOfPersons"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/request_numOfPersons_height"
+                    android:inputType="numberDecimal"
+                    android:padding="@dimen/request_numOfPersons_padding"
+                    android:hint="Number of Persons"
+                    android:textSize="@dimen/request_numOfPersons_textSize"
+                    android:maxLength="6"
+                    android:layout_marginTop="@dimen/request_numOfPersons_marginTop"
+                    android:gravity="center_vertical"
+                    android:textColorHint="@color/colorgrey"
+                    android:background="@drawable/edittext_bg"
+                    android:textCursorDrawable="@drawable/cursor_color"/>
+
+                <TextView
+                    android:id="@+id/request_service_req_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Reservation Comments:"
+                    android:textColor="@color/colorgrey"
+                    android:layout_marginTop="@dimen/request_service_req_tv_marginTop"
+                    />
+                <EditText
+                    android:id="@+id/request_service_req_et"
+                    android:layout_marginTop="@dimen/request_service_req_et_marginTop"
+                    android:layout_width="@dimen/request_service_req_et_width"
+                    android:layout_height="@dimen/request_service_req_et_height"
+                    android:paddingRight="@dimen/request_service_req_et_marginRight"
+                    android:paddingLeft="@dimen/request_service_req_et_marginLeft"
+                    android:hint=""
+                    android:scrollbars="vertical" android:gravity="top|left"  android:inputType="textMultiLine"  android:maxLength="500"
+                    android:background="@drawable/edittext_bg"
+                    android:textCursorDrawable="@drawable/cursor_color"/>
+                <Button android:id="@+id/request_guestinfo_submit_btn"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="@dimen/request_guestinfo_submit_btn_marginTop"
+                    android:layout_height="@dimen/request_guestinfo_submit_btn_height"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:background="@drawable/button_round_corvners"
+                    android:textColor="#FFFFFF"
+                    android:text="Submit" android:onClick="requestForm"/>
+            </LinearLayout>
+        </ScrollView>
+        <!-- <include layout="@layout/home_footer" />-->
+    </LinearLayout>
+
+    <include layout="@layout/home_footer"
+        />
+</RelativeLayout>

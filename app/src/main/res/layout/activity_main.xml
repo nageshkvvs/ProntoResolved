@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.testdemo.com.prontoresolved.MainActivity"
+    android:id="@+id/rl_backgd_image"
+    >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Hello World!" />
+
+   <!-- <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal|center_vertical">
+
+        <Button
+            android:id="@+id/hotel_memberId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Memeber"/>
+        <Button
+            android:id="@+id/hotel_guest"
+            android:layout_marginLeft="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Guest"/>
+    </LinearLayout>-->
+    <LinearLayout
+        android:id="@+id/ll_hotel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/main_activity_ll_hotel_margin_top"
+        android:background="@drawable/border"
+        android:layout_centerHorizontal="true">
+        <LinearLayout
+            android:id="@+id/guest_ll"
+            android:layout_width="@dimen/main_activity_guest_ll__width"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/main_activity_guest_ll_paddingTop"
+            android:paddingBottom="@dimen/main_activity_guest_ll_paddingButtom" android:onClick="guestInfo">
+   <Button
+       android:id="@+id/guest_btn"
+       android:layout_width="@dimen/main_activity_guest_btn__width"
+       android:layout_height="wrap_content"
+       android:layout_marginLeft="@dimen/main_activity_guest_btn_marginLeft"
+       android:background="@drawable/guests_selector" />
+            <TextView
+                android:id="@+id/guest_tv"
+                android:layout_marginLeft="@dimen/main_activity_guest_tv_marginLeft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="Guest" android:textColor="@color/colorBlack" android:textStyle="bold"/>
+
+        </LinearLayout>
+        <View android:id="@+id/hdrTop" android:layout_height="@dimen/main_activity_hdrTop_layout_height"
+            android:layout_width="fill_parent" android:layout_marginTop="@dimen/main_activity_hdrTop_layout_marginTop"
+            android:background="#cccccc"/>
+<LinearLayout
+    android:id="@+id/team_member_ll"
+    android:layout_width="@dimen/main_activity_team_member_ll_width"
+    android:layout_height="wrap_content" android:orientation="horizontal"
+    android:paddingTop="@dimen/main_activity_team_member_ll_paddingTop"
+    android:paddingBottom="@dimen/main_activity_team_member_ll_paddingBottom">
+        <Button
+            android:id="@+id/team_member_btn"
+            android:layout_marginLeft="@dimen/main_activity_team_member_btn_marginLeft"
+            android:layout_width="@dimen/main_activity_team_member_btn_width"
+            android:layout_height="wrap_content"
+            android:background="@drawable/team_members_selector"/>
+    <TextView
+        android:id="@+id/team_member_tv"
+        android:layout_width="wrap_content" android:layout_marginLeft="@dimen/main_activity_team_member_tv_marginLeft" android:textStyle="bold"
+        android:layout_height="wrap_content" android:text="Team member" android:textColor="@color/colorBlack"/>
+</LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_guestinfo"
+        android:layout_width="@dimen/main_activity_ll_guestinfo_width"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        android:background="@drawable/border"
+        android:layout_centerInParent="true" android:visibility="gone" android:padding="@dimen/main_activity_ll_guestinfo_padding">
+
+        <ImageView
+            android:id="@+id/notification_close_imageview"
+            android:layout_width="@dimen/guestinfo_close_imageview_width"
+            android:layout_height="@dimen/guestinfo_close_imageview_height"
+            android:layout_gravity="right"
+            android:src="@drawable/actions_window_close_icon"
+            android:onClick="_closeGuestLayout"/>
+        <TextView
+            android:id="@+id/guestinfo_tv"
+            android:layout_width="match_parent"
+            android:textStyle="bold"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content" android:text="Guest Information" android:textColor="@color/colorgrey"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/main_activity_guestname_et_height" android:id="@+id/guestname_et"
+            android:inputType="textCapSentences"
+            android:padding="@dimen/main_activity_guestname_et_padding"
+            android:hint="First name"
+            android:layout_marginTop="@dimen/main_activity_guestname_et_marginTop"
+            android:textSize="@dimen/main_activity_guestname_et_textSize"
+            android:textColorHint="@color/colorgrey"
+            android:maxLength="50"
+            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+            android:background="@drawable/edittext_bg" android:textCursorDrawable="@drawable/cursor_color"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/main_activity_guestname_et_height" android:id="@+id/hotel_name_et"
+            android:inputType="textCapSentences"
+            android:padding="@dimen/main_activity_guestname_et_padding"
+            android:hint="Last name"
+            android:layout_marginTop="@dimen/main_activity_guestname_et_marginTop"
+            android:textSize="@dimen/main_activity_guestname_et_textSize"
+            android:textColorHint="@color/colorgrey"
+            android:background="@drawable/edittext_bg"
+            android:maxLength="50"
+            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+            android:textCursorDrawable="@drawable/cursor_color"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/main_activity_guestname_et_height" android:id="@+id/check_in_tv"
+            android:inputType="text"
+            android:padding="@dimen/main_activity_guestname_et_padding"
+            android:hint="Check in date"
+            android:textSize="12sp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:drawableRight="@drawable/calendar"
+            android:textColorHint="@color/colorgrey"
+            android:background="@drawable/edittext_bg" android:onClick="showDatePicker"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/main_activity_guestname_et_height" android:id="@+id/check_out_tv"
+            android:inputType="text"
+            android:padding="@dimen/main_activity_guestname_et_padding"
+            android:hint="Check out date"
+            android:textSize="@dimen/main_activity_guestname_et_textSize"
+            android:drawableRight="@drawable/calendar"
+            android:layout_marginTop="@dimen/main_activity_guestname_et_marginTop"
+            android:gravity="center_vertical"
+            android:textColorHint="@color/colorgrey"
+            android:background="@drawable/edittext_bg" android:onClick="showDatePicker"/>
+        <EditText
+            android:id="@+id/room_number_et"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/request_numOfPersons_height"
+            android:padding="@dimen/request_numOfPersons_padding"
+            android:hint="Room number"
+            android:maxLength="5"
+            android:textSize="@dimen/request_numOfPersons_textSize"
+            android:layout_marginTop="@dimen/request_numOfPersons_marginTop"
+            android:gravity="center_vertical"
+            android:textColorHint="@color/colorgrey"
+            android:background="@drawable/edittext_bg"
+            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789–/"
+            android:textCursorDrawable="@drawable/cursor_color"/>
+
+        <Button android:id="@+id/btn_guestinfo_submit"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/main_activity_btn_guestinfo_submit_marginTop"
+            android:layout_height="@dimen/main_activity_btn_guestinfo_submit_height"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:background="@drawable/button_round_corvners"
+            android:textColor="#FFFFFF"
+            android:onClick="_formSubmit"
+            android:text="Submit"/>
+
+    </LinearLayout>
+
+    <!--<LinearLayout
+        android:id="@+id/ll_datepicker"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        android:background="@drawable/border"
+        android:layout_centerInParent="true" android:visibility="gone" android:padding="10dp">
+        <DatePicker
+            android:id="@+id/simpleDatePicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:datePickerMode="calendar"  android:calendarTextColor="@color/colorgrey"/>
+        <Button android:id="@+id/btn_date_submit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:text="SUBMIT"/>
+        </LinearLayout>-->
+
+<include layout="@layout/footer"/>
+</RelativeLayout>

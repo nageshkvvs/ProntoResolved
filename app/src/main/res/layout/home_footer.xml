@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/home_footer_ll_height"
+    android:layout_alignParentBottom="true"
+    android:background="#FFFFFF"
+    android:gravity="center_horizontal"
+    android:orientation="horizontal" android:id="@+id/home_footer_ll">
+
+    <LinearLayout
+        android:id="@+id/request_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/request_ll_marginLeft"
+        android:layout_marginRight="@dimen/request_ll_marginRight"
+        android:layout_marginTop="@dimen/request_ll_marginTop"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/request_btn"
+            android:layout_width="@dimen/request_btn_width"
+            android:layout_height="@dimen/request_btn_height"
+
+            android:background="@drawable/request_selector"
+            android:onClick="request" />
+
+        <TextView
+            android:id="@+id/request_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/request_tv_marginTop"
+            android:text="Reser..." />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/report_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/report_ll_marginLeft"
+        android:layout_marginRight="@dimen/report_ll_marginRight"
+        android:layout_marginTop="@dimen/report_ll_marginTop"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/report_btn"
+            android:layout_width="@dimen/report_btn_width"
+            android:layout_height="@dimen/report_btn_height"
+            android:background="@drawable/report_selector"
+            android:onClick="report" />
+
+        <TextView
+            android:id="@+id/report_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/report_tv_marginTop"
+            android:text="Report" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/hotel_logo_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:layout_margin="@dimen/hotel_logo_ll_margin"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/hotel_logo_btn"
+            android:layout_width="@dimen/hotel_logo_btn_width"
+            android:layout_height="@dimen/hotel_logo_btn_height"
+            android:background="@drawable/grange_hotels_100"
+            android:onClick="home"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/contact_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/contact_ll_marginLeft"
+        android:layout_marginRight="@dimen/contact_ll_marginRight"
+        android:layout_marginTop="@dimen/contact_ll_marginTop"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/contact_btn"
+            android:layout_width="@dimen/contact_btn_width"
+            android:layout_height="@dimen/contact_btn_height"
+            android:layout_marginLeft="@dimen/contact_btn_marginLeft"
+            android:background="@drawable/contact_selector"
+            android:onClick="contactPurpose"/>
+
+        <TextView
+            android:id="@+id/contact_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/contact_tv_marginTop"
+            android:text="Contact" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/more_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/more_ll_marginLeft"
+        android:layout_marginRight="@dimen/more_ll_marginRight"
+        android:layout_marginTop="@dimen/more_ll_marginTop"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/more_btn"
+            android:layout_width="@dimen/more_btn_width"
+            android:layout_height="@dimen/more_btn_height"
+            android:background="@drawable/more_selector"
+            android:onClick="underConstruction"/>
+
+        <TextView
+            android:id="@+id/more_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/more_tv_marginTop"
+            android:text="More" />
+
+    </LinearLayout>
+
+</LinearLayout>
